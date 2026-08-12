@@ -14,7 +14,6 @@ const projects = [
     github: "https://github.com/rehanraja-webdev/Notes-App",
     live: "https://inknotes.netlify.app/",
   },
-
   {
     title: "TeamTask",
     description:
@@ -24,7 +23,6 @@ const projects = [
     github: "https://github.com/rehanraja-webdev/team-task-manager",
     live: "",
   },
-
   {
     title: "GameZone",
     description:
@@ -54,7 +52,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div className="project-card" key={index}>
             <div className="project-image">
-              <img src={project.image} alt="" />
+              <img src={project.image} alt={project.title} loading="lazy" />
             </div>
 
             <div className="project-content">
@@ -69,15 +67,27 @@ const Projects = () => {
               </div>
 
               <div className="project-links">
-                <a href={project.github} target="_Blank">
-                  <FaGithub />
-                  GitHub
-                </a>
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub />
+                    GitHub
+                  </a>
+                )}
 
-                <a href={project.live} target="_Blank">
-                  <FaExternalLinkAlt />
-                  Live Demo
-                </a>
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaExternalLinkAlt />
+                    Live Demo
+                  </a>
+                )}
               </div>
             </div>
           </div>
