@@ -14,11 +14,11 @@ const Hero = () => {
             Rehan <span>Raja</span>
           </h1>
 
-          <h2>Full Stack Developer</h2>
+          <h2>Mern Stack Developer</h2>
 
           <p className="hero-description">
             I build modern, scalable, and responsive web applications using
-            React, Node.js, Express, and MongoDB. Passionate about transforming
+            React, Tailwind, Node.js, Express, and MongoDB. Passionate about transforming
             ideas into impactful digital experiences and continuously improving
             my development skills.
           </p>
