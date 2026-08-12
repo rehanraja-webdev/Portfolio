@@ -12,7 +12,9 @@ html {
 }
 
 .main {
-  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  width: 100%;
   color: aliceblue;
   background-color: #0d1117;
   font-family: Poppins, Verdana, Tahoma, sans-serif;
