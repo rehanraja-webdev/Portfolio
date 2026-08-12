@@ -1,6 +1,7 @@
 import "./Hero.css";
 import profile from "../../assets/profile.jpg";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import Resume from "../../assets/Resume.pdf";
 
 const Hero = () => {
   return (
@@ -26,7 +27,9 @@ const Hero = () => {
             <a className="view-btn" href="#projects">
               Projects
             </a>
-            <button className="download-btn">Resume</button>
+            <a href={Resume} className="download-btn">
+              Resume
+            </a>
           </div>
 
           <div className="social-links">
@@ -54,7 +57,13 @@ const Hero = () => {
 
         <div className="right-hero">
           <div className="img-container">
-            <img src={profile} alt="Rehan Raza" />
+            <img
+              width={300}
+              height={300}
+              src={profile}
+              alt="Rehan Raza"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
