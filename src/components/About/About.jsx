@@ -57,7 +57,7 @@ const About = () => {
 
         <div className="stat">
           <h3>MERN</h3>
-          <span>Full Stack Developer</span>
+          <span>Stack Developer</span>
         </div>
       </div>
     </section>
