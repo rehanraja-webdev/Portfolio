@@ -20,40 +20,36 @@ const Contact = () => {
         <a href="mailto:rehanraja.dev@gmail.com" className="contact-card">
           <FaEnvelope />
           <h3>Email</h3>
-          <span>rehanraja.dev@gmail.com</span>
         </a>
 
         <a
           href="https://github.com/rehanraja-webdev"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="contact-card"
         >
           <FaGithub />
           <h3>GitHub</h3>
-          <span>@rehanraja-webdev</span>
         </a>
 
         <a
           href="https://www.linkedin.com/in/rehan-raja-devs"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="contact-card"
         >
           <FaLinkedin />
           <h3>LinkedIn</h3>
-          <span>Connect with me</span>
         </a>
 
         <a
           href="https://instagram.com/official_rehan.0786"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="contact-card"
         >
           <FaInstagram />
           <h3>Instagram</h3>
-          <span>Get in touch</span>
         </a>
       </div>
     </section>
